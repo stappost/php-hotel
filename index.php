@@ -56,6 +56,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    <?php include __DIR__.'/partials/filter.php'?>
+                </div>
+                <div class="col-12">
                     <table class="table table-striped-columns my-5">
                         <thead>
                             <tr>
@@ -67,7 +70,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach($hotels as $hotel){ ?>
+                            <?php foreach($filtered_hotels as $hotel){ ?>
                                 <tr>
                                     <td class=' fs-4'><?php echo $hotel['name'] ?></td>
                                     <td class='py-3'><?php echo $hotel['description']?></td>
