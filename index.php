@@ -49,6 +49,7 @@
     <title>Document</title>
 </head>
 <body>
+    <?php include_once  __DIR__.'/partials/header.php' ?>
     <main class='bg-primary-subtle'>
         <div class="container">
             <div class="row">
@@ -66,11 +67,11 @@
                         <tbody>
                             <?php foreach($hotels as $hotel){ ?>
                                 <tr>
-                                    <td><?php echo $hotel['name'] ?></td>
-                                    <td><?php echo $hotel['description']?></td>
-                                    <td><?php echo ($hotel['parking']) ? 'Si' : 'No'?></td>
-                                    <td><?php echo $hotel['vote']?></td>
-                                    <td><?php echo $hotel['distance_to_center']?></td>
+                                    <td class=' fs-4'><?php echo $hotel['name'] ?></td>
+                                    <td class='py-3'><?php echo $hotel['description']?></td>
+                                    <td class='py-3'><?php echo ($hotel['parking']) ? 'Si' : 'No'?></td>
+                                    <td class='py-3'><?php echo $hotel['vote']?></td>
+                                    <td class='py-3'><?php echo $hotel['distance_to_center']?></td>
                                 </tr>
                             <?php } ?>
                         </tbody>
