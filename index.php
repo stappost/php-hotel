@@ -37,7 +37,9 @@
             'distance_to_center' => 50
         ],
     ];
-
+    $tel = 3334445678;
+    $mail = 'mail@example.com';
+    $address = 'Via Destinzione 3';
 ?>
 
 <!DOCTYPE html>
@@ -80,5 +82,6 @@
             </div>
         </div>
     </main>
+    <?php include_once  __DIR__.'/partials/footer.php' ?>
 </body>
 </html>
